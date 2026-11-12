@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Data: do not commit the Kaggle file (see data/README.md). The tiny synthetic sample is allowed.
+data/*
+!data/README.md
+!data/sample_synthetic.csv
+
+# Trained artefacts and generated reports are reproducible
+models/*.joblib
+reports/metrics.json
+reports/metrics.md
+reports/figures/*.png
+scratch_models/
+scratch_reports/
